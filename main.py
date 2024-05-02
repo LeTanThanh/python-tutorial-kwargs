@@ -18,3 +18,11 @@ if __name__ == "__main__":
 
   def connect(fn, **kwargs):
     print(kwargs)
+
+  # Using both *args and **kwargs arguments
+
+  def fn(*args, **kwargs):
+    print(args)
+    print(kwargs)
+
+  fn(1, 2, x = 10, y = 20)
